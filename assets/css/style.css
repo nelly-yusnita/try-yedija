@@ -277,7 +277,7 @@ button{
 /* ===== HOME ===== */
 .home{
 	position: relative;
-	padding: 8rem 0 4rem;
+	padding: 8rem 0 6rem;
    background: -webkit-linear-gradient(280deg,
                hsl(0, 0%, 22%) 0%,
                hsl(0, 0%, 6%) 30%);
@@ -737,8 +737,6 @@ button{
 .contact__card{
 	display: -ms-grid;
 	display: grid;
-   -ms-grid-columns: (1fr)[2];
-       grid-template-columns: repeat(2, 1fr);
    grid-gap: 1.25rem .75rem;
 }
 .contact__card-box{
@@ -932,8 +930,8 @@ button{
 
    /* ===== CONTACT ===== */
    .contact__card{
-      -ms-grid-columns: (180px)[1];
-          grid-template-columns: repeat(1, 180px);
+      -ms-grid-columns: (200px)[1];
+          grid-template-columns: repeat(1, 200px);
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -955,6 +953,24 @@ button{
 		height: 150px;
 	}
 	/* ===== end portfolio ===== */
+}
+
+@media screen and (min-width: 351px){
+	/* ===== CONTACT ===== */
+   .contact__card{
+      -ms-grid-columns: (225px)[1];
+          grid-template-columns: repeat(1, 225px);
+   }
+   /* ===== end contact ===== */
+}
+
+@media screen and (min-width: 452px){
+	/* ===== CONTACT ===== */
+   .contact__card{
+      -ms-grid-columns: (200px)[2];
+          grid-template-columns: repeat(2, 200px);
+   }
+   /* ===== end contact ===== */
 }
 
 @media screen and (min-width: 500px){
