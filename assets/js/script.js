@@ -52,7 +52,7 @@ window.addEventListener('scroll', scrollActive);
 function scrollHeader(){
 	const header = document.getElementById('header')
 
-	if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header');
+	if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader);
 // ===== end change background header ===== //
@@ -69,24 +69,35 @@ const homeSwiper = new Swiper(".home__slides", {
 });
 // ===== end home slider ===== //
 
-// ===== TESTIMONIAL ===== //
-const testimonialSwiper = new Swiper(".testimoni__container", {
-	slidesPerView: 1,
-	loop: true,
+// ===== SWIPER TESTIMONI ===== //
+const swiperPopular = new Swiper(".testimoni__container", {
+	spaceBetween: 32,
 	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	loop: 'true',
 
-	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
 	},
 
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-		dynamicBullets: true,
-	},
+	// breakpoints: {
+	// 	640: {
+	// 		slidesPerView: 2,
+	// 	},
+	// 	1024: {
+	// 		slidesPerView: 3,
+	// 	},
+	// }
 });
-// ===== end testimonial ===== //
+// ===== end swiper testimoni ===== //
+
+// ===== VIDEO SLIDER ===== //
+function videoSlider(links){
+	document.querySelector(".video__slider").src = links;
+}
+// ===== end video slider ===== //
 
 // ===== SCROLL UP ===== //
 function scrollUp(){
@@ -105,7 +116,9 @@ const sr = ScrollReveal({
    delay: 400,
    // reset: true// animation repeat //
 })
-sr.reveal(`.banner__container, .section__title, .banner__container-2, .portfolio__title`)
-sr.reveal(`.home__data-content, .about__images`, {origin: 'left'})
+
+sr.reveal(`.section__title, .first__banner-data, .testimoni__container, .second__banner-container, .portfolio__videos-container`)
+sr.reveal(`.home__data-content, .about__images, .portfolio__title, .contact__address`, {origin: 'left'})
 sr.reveal(`.about__data`, {origin: 'right'})
-sr.reveal(`.service__card, .portfolio__image-box, .portfolio__video-box, .contact__content`, {interval: 100})
+sr.reveal(`.service__card, .portfolio__image-box, .contact__informations .contact__card-box`, {interval: 100})
+// ===== end scroll reveal animation ===== //

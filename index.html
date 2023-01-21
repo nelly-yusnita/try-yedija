@@ -10,11 +10,11 @@
 	<!-- ===== BOXICONS ===== -->
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-	<!-- ===== FANCYAPPS CSS ===== -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-
 	<!-- ===== SWIPER CSS ===== -->
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+	<!-- ===== FANCYAPPS CSS ===== -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 
 	<!-- ===== MAIN CSS ===== -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -25,34 +25,54 @@
 	<!-- ===== HEADER ===== -->
 	<header class="header" id="header">
 		<nav class="nav container">
-			<a href="#" class="nav__logo">
-				<img src="assets/img/yedija-production-logo.png" alt="logo image" class="nav__logo-img">
-			</a>
+			<a href="#" class="nav__logo">YEDIJA <span>PRODUCTION</span></a>
 
 			<div class="nav__menu" id="nav-menu">
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a href="#home" class="nav__link active-link">Home</a>
+						<a href="#home" class="nav__link active-link">
+							Home
+						</a>
 					</li>
+
 					<li class="nav__item">
-						<a href="#services" class="nav__link">Services</a>
+						<a href="#services" class="nav__link">
+							Services
+						</a>
 					</li>
+
 					<li class="nav__item">
-						<a href="#prices" class="nav__link">Price List</a>
+						<a href="#prices-list" class="nav__link">
+							Price List
+						</a>
 					</li>
+
 					<li class="nav__item">
-						<a href="#testimoni" class="nav__link">Testimoni</a>
+						<a href="#testimoni" class="nav__link">
+							Testimoni
+						</a>
 					</li>
+
 					<li class="nav__item">
-						<a href="#contact" class="nav__link">Our Contact</a>
+						<a href="#portfolio" class="nav__link">
+							Portfolio
+						</a>
+					</li>
+
+					<li class="nav__item">
+						<a href="#contact" class="nav__link">
+							Contact
+						</a>
 					</li>
 				</ul>
 
+				<!-- Nav close -->
 				<div class="nav__close" id="nav-close">
 					<i class='bx bx-x'></i>
 				</div>
 			</div>
 
+			<!-- Nav toggle -->
 			<div class="nav__toggle" id="nav-toggle">
 				<i class='bx bx-menu-alt-right'></i>
 			</div>
@@ -64,42 +84,32 @@
 	<main class="main">
 		<!-- ===== HOME ===== -->
 		<section class="home" id="home">
-			<!-- Home slides -->
-			<div class="home__slides-box">
-				<div class="home__slides swiper">
-					<div class="swiper-wrapper">
-						<!-- 1 -->
-						<div class="swiper-slide">
-							<div class="home__slide">
-								<img src="assets/img/home-slide-1.jpg" alt="home image" class="home__img">
-							</div>
-						</div>
-						<!-- 2 -->
-						<div class="swiper-slide">
-							<div class="home__slide">
-								<img src="assets/img/home-slide-2.jpg" alt="home image" class="home__img">
-							</div>
-						</div>
-						<!-- 3 -->
-						<div class="swiper-slide">
-							<div class="home__slide">
-								<img src="assets/img/home-slide-3.jpg" alt="home image" class="home__img">
-							</div>
-						</div>
-					</div>
+			<!-- Home Data -->
+			<div class="home__data container">
+				<div class="home__data-content">
+					<h1 class="home__title">YEDIJA<br><span>PRODUCTION</span></h1>
+					<p class="home__description">Jasa Penyewaan Sound System, Alat Musik, Video dan Lighting Wilayah Jakarta & Sekitarnya.</p>
+
+					<a href="https://api.whatsapp.com/send?phone=6281229567833&text=Halo+Admin%2C+Can+I+get+more+information!" class="button__whatsapp-basic" target="_blank">
+						<i class='bx bxl-whatsapp button__whatsapp-icon'></i>
+						<span class="button__text">Order Sekarang</span>
+					</a>
 				</div>
 			</div>
 
-			<!-- Home Data -->
-			<div class="home__data">
-				<div class="home__data-content container">
-					<h1 class="home__title">YEDIJA<br><span>PRODUCTION</span></h1>
-					<p class="home__description">Jasa Penyewaan <span>Sound System</span>, <span>Alat Musik</span>, <span>Video</span> dan <span>Lighting</span> Wilayah Jakarta & Sekitarnya.</p>
+			<div class="home__slides swiper">
+				<div class="home__wrapper swiper-wrapper">
+					<div class="home__slide swiper-slide">
+						<img src="assets/img/home-slide-1.jpg" alt="home image" class="home__img">
+					</div>
 
-					<a href="https://api.whatsapp.com/send?phone=6281229567833&text=Halo+Admin%2C+Can+I+get+more+information!" class="button__flex home__button" target="_blank">
-						<i class='bx bxl-whatsapp'></i>
-						<span class="button__text">Order Sekarang</span>
-					</a>
+					<div class="home__slide swiper-slide">
+						<img src="assets/img/home-slide-2.jpg" alt="home image" class="home__img">
+					</div>
+
+					<div class="home__slide swiper-slide">
+						<img src="assets/img/home-slide-3.jpg" alt="home image" class="home__img">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -110,51 +120,139 @@
 			<div class="about__container container grid">
 				<div class="about__data">
 					<h1 class="about__title">Siapa Kami?</h1>
-					<p class="about__description">Kami Adalah Penyedia Jasa Penyewaan Untuk Sound System, Alat Musik, Video dan Lighting Wilayah Jakarta dan Sekitarnya</p>
+					<p class="about__description">Kami Adalah Penyedia Jasa Penyewaan Untuk Sound System, Alat Musik, Video dan Lighting Wilayah Jakarta dan Sekitarnya.</p>
 
-					<div class="about__pros grid">
-						<div class="about__pros-box about__line">
-							<!-- <div> -->
-								<i class='bx bxs-star about__pros-icon'></i>
-							<!-- </div> -->
-							<span class="about__pros-description">Terbaik</span>
+					<div class="about__advantage grid">
+						<div>
+							<i class='bx bxs-star about__icon'></i>
+							<span>Terbaik</span>
 						</div>
 
-						<div class="about__pros-box about__line">
-							<!-- <div> -->
-								<i class='bx bxs-like about__pros-icon'></i>
-							<!-- </div> -->
-							<span class="about__pros-description">Berkualitas</span>
+						<div>
+							<i class='bx bxs-like about__icon'></i>
+							<span>Berkualitas</span>
 						</div>
-						<div class="about__pros-box about__line">
-							<!-- <div> -->
-								<i class='bx bx-check about__pros-icon'></i>
-							<!-- </div> -->
-							<span class="about__pros-description">Terpercaya</span>
+
+						<div>
+							<i class='bx bx-check about__icon'></i>
+							<span>Terpercaya</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="about__images">
-					<img src="assets/img/about-img-2.jpg" alt="about image" class="about__img">
+					<img src="assets/img/about-img.jpg" alt="about image" class="about__img">
 					<div class="about__square"></div>
 				</div>
 			</div>
 		</section>
 		<!-- ===== end about ===== -->
 
-		<!-- ===== BANNER ===== -->
-		<section class="banner">
+		<!-- ===== SERVICES ===== -->
+		<section class="services section container" id="services">
+			<h2 class="section__title">Our Services</h2>
+
+			<div class="services__container grid">
+				<article class="service__card">
+					<div class="service__img-box">
+						<img src="assets/img/service-1.jpg" alt="service image" class="service__img">
+					</div>
+
+					<div class="service__data">
+						<h3 class="service__title">
+							Sewa Sound System
+						</h3>
+
+						<a href="#" class="service__button" target="_blank">
+							<span>Cek Harga</span>
+							<i class="bx bx-right-arrow-alt"></i>
+						</a>
+					</div>
+				</article>
+
+				<article class="service__card">
+					<div class="service__img-box">
+						<img src="assets/img/service-2.jpg" alt="service image" class="service__img">
+					</div>
+
+					<div class="service__data">
+						<h3 class="service__title">
+							Sewa Alat Band
+						</h3>
+
+						<a href="#" class="service__button" target="_blank">
+							<span>Cek Harga</span>
+							<i class="bx bx-right-arrow-alt"></i>
+						</a>
+					</div>
+				</article>
+
+				<article class="service__card">
+					<div class="service__img-box">
+						<img src="assets/img/service-3.jpg" alt="service image" class="service__img">
+					</div>
+
+					<div class="service__data">
+						<h3 class="service__title">
+							Sewa Alat Musik
+						</h3>
+
+						<a href="#" class="service__button" target="_blank">
+							<span>Cek Harga</span>
+							<i class="bx bx-right-arrow-alt"></i>
+						</a>
+					</div>
+				</article>
+
+				<article class="service__card">
+					<div class="service__img-box">
+						<img src="assets/img/service-4.jpg" alt="service image" class="service__img">
+					</div>
+
+					<div class="service__data">
+						<h3 class="service__title">
+							Paket Live Streaming
+						</h3>
+
+						<a href="#" class="service__button" target="_blank">
+							<span>Cek Harga</span>
+							<i class="bx bx-right-arrow-alt"></i>
+						</a>
+					</div>
+				</article>
+
+				<article class="service__card">
+					<div class="service__img-box">
+						<img src="assets/img/service-5.jpg" alt="service image" class="service__img">
+					</div>
+
+					<div class="service__data">
+						<h3 class="service__title">
+							Sewa Lighting
+						</h3>
+
+						<a href="#" class="service__button" target="_blank">
+							<span>Cek Harga</span>
+							<i class="bx bx-right-arrow-alt"></i>
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- ===== end services ===== -->
+
+		<!-- ===== BANNER 1 ===== -->
+		<section class="first__banner">
 			<div class="custom-shape-divider-top-1673765287">
 				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 					<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
 				</svg>
 			</div>
 
-			<div class="banner__container container">
-				<h2 class="banner__description">Yedija Production Juga Menyediakan Jasa Instalasi Sound System dan Lighting Seperti Pemasangan Dirumah Ibadah, Tempat Hiburan, Kantor, Public Area dan Lain-lain.</h2>
-				<div class="banner__line"></div>
-				<h1 class="banner__title">BEBAS BIAYA KONSULTASI</h1>
+			<div class="first__banner-data container">
+				<h2 class="first__banner-description">Yedija Production Juga Menyediakan Jasa Instalasi Sound System dan Lighting Seperti Pemasangan Dirumah Ibadah, Tempat Hiburan, Kantor, Public Area dan Lain-lain.</h2>
+				<div class="first__banner-line"></div>
+				<h1 class="first__banner-title">BEBAS BIAYA KONSULTASI</h1>
 			</div>
 
 			<div class="custom-shape-divider-bottom-1673765396">
@@ -163,177 +261,86 @@
 				</svg>
 			</div>
 		</section>
-		<!-- ===== end banner ===== -->
-
-		<!-- ===== SERVICES ===== -->
-		<section class="services section container" id="services">
-			<h2 class="section__title">Our Services</h2>
-
-			<div class="services__container grid">
-				<div class="service__card">
-					<div class="service__image">
-						<img src="assets/img/service-1.jpg" alt="services image">
-					</div>
-					<div class="services__data">
-						<h3 class="service__title">Sewa Sound System</h3>
-						<a href="#" class="button button__flex" target="_blank">
-							<span class="button__text">Cek Harga</span>
-							<i class="bx bx-right-arrow-alt button__icon"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="service__card">
-					<div class="service__image">
-						<img src="assets/img/service-2.jpg" alt="services image">
-					</div>
-					<div class="services__data">
-						<h3 class="service__title">Sewa Alat Band</h3>
-						<a href="#" class="button button__flex" target="_blank">
-							<span class="button__text">Cek Harga</span>
-							<i class="bx bx-right-arrow-alt button__icon"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="service__card">
-					<div class="service__image">
-						<img src="assets/img/service-3.jpg" alt="services image">
-					</div>
-					<div class="services__data">
-						<h3 class="service__title">Sewa Alat Musik</h3>
-						<a href="#" class="button button__flex" target="_blank">
-							<span class="button__text">Cek Harga</span>
-							<i class="bx bx-right-arrow-alt button__icon"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="service__card">
-					<div class="service__image">
-						<img src="assets/img/service-4.jpg" alt="services image">
-					</div>
-					<div class="services__data">
-						<h3 class="service__title">Paket Live Streaming</h3>
-						<a href="#" class="button button__flex" target="_blank">
-							<span class="button__text">Cek Harga</span>
-							<i class="bx bx-right-arrow-alt button__icon"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="service__card">
-					<div class="service__image">
-						<img src="assets/img/service-5.jpg" alt="services image">
-					</div>
-					<div class="services__data">
-						<h3 class="service__title">Sewa Lighting</h3>
-						<a href="#" class="button button__flex" target="_blank">
-							<span class="button__text">Cek Harga</span>
-							<i class="bx bx-right-arrow-alt button__icon"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ===== end services ===== -->
+		<!-- ===== end banner 1 ===== -->
 
 		<!-- ===== TESTIMONI ===== -->
-		<section class="testimoni section" id="testimoni">
-			<h2 class="section__title container">Testimoni</h2>
+		<section class="testimoni container section" id="testimoni">
+			<h2 class="section__title">Testimoni</h2>
 
 			<div class="testimoni__container swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="testimoni__content container">
-							<p class="testimoni__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!</p>
-
-							<div class="testimoni__up">
-								<i class='bx bxs-quote-alt-right quotation__icon'></i>
-							</div>
-
-							<div class="testimoni__down">
-								<img src="assets/img/testimoni-1.jpg" alt="testimoni image" class="testi__photo">
-							</div>
-
-							<div class="testimoni__data">
-								<h3 class="testimoni__name">JOHN ELBA 1</h3>
-								<span class="testimoni__job">Cosmetologist</span>
+				<div class="testimoni__wrapper swiper-wrapper">
+					<article class="testimoni__card swiper-slide">
+						<div class="image__box">
+							<div class="image__border">
+								<img src="assets/img/testimoni-img.jpg" alt="testimoni image" class="testimoni__img">
 							</div>
 						</div>
-					</div>
 
-					<div class="swiper-slide">
-						<div class="testimoni__content container">
-							<p class="testimoni__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!</p>
+						<div class="testimoni__data">
+							<h3 class="testimoni__name">Name 1</h3>
+							<span class="testimoni__job">Front-end</span>
 
-							<div class="testimoni__up">
-								<i class='bx bxs-quote-alt-right quotation__icon'></i>
-							</div>
+							<p class="testimoni__description">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!"</p>
+						</div>
+					</article>
 
-							<div class="testimoni__down">
-								<img src="assets/img/testimoni-1.jpg" alt="testimoni image" class="testi__photo">
-							</div>
-
-							<div class="testimoni__data">
-								<h3 class="testimoni__name">JOHN ELBA 2</h3>
-								<span class="testimoni__job">Cosmetologist</span>
+					<article class="testimoni__card swiper-slide">
+						<div class="image__box">
+							<div class="image__border">
+								<img src="assets/img/testimoni-img.jpg" alt="testimoni image" class="testimoni__img">
 							</div>
 						</div>
-					</div>
 
-					<div class="swiper-slide">
-						<div class="testimoni__content container">
-							<p class="testimoni__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!</p>
+						<div class="testimoni__data">
+							<h3 class="testimoni__name">Name 2</h3>
+							<span class="testimoni__job">Back-end</span>
 
-							<div class="testimoni__up">
-								<i class='bx bxs-quote-alt-right quotation__icon'></i>
-							</div>
+							<p class="testimoni__description">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!"</p>
+						</div>
+					</article>
 
-							<div class="testimoni__down">
-								<img src="assets/img/testimoni-1.jpg" alt="testimoni image" class="testi__photo">
-							</div>
-
-							<div class="testimoni__data">
-								<h3 class="testimoni__name">JOHN ELBA 3</h3>
-								<span class="testimoni__job">Cosmetologist</span>
+					<article class="testimoni__card swiper-slide">
+						<div class="image__box">
+							<div class="image__border">
+								<img src="assets/img/testimoni-img.jpg" alt="testimoni image" class="testimoni__img">
 							</div>
 						</div>
-					</div>
+
+						<div class="testimoni__data">
+							<h3 class="testimoni__name">Name 3</h3>
+							<span class="testimoni__job">Fullstuck</span>
+
+							<p class="testimoni__description">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui commodi rerum eaque harum accusantium odit voluptate quasi sapiente totam necessitatibus!"</p>
+						</div>
+					</article>
 				</div>
 
-				<!-- Pagination -->
-				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next">
+					<i class='bx bx-chevron-right'></i>
+				</div>
+				<div class="swiper-button-prev">
+					<i class='bx bx-chevron-left'></i>
+				</div>
 			</div>
 		</section>
 		<!-- ===== end testimoni ===== -->
 
 		<!-- ===== BANNER 2 ===== -->
-		<section class="banner-2">
-			<!-- <div class="custom-shape-divider-top-1673765287">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-				</svg>
-			</div> -->
+		<section class="second__banner section">
+			<div class="second__banner-container container">
+				<h2 class="second__banner-subtitle">Bingung Cari Persewaan Sound System?</h2>
+				<h1 class="second__banner-title">Percayakan Saja Pada Kami</h1>
+				<h3 class="second__banner-description">Karena Kami Adalah Ahlinya Sound System</h3>
 
-			<div class="banner__container-2 container">
-				<h1 class="banner__title-2">Kamu Berhak Merasakan Hal Yang Sama ! !</h1>
-
-				<a href="https://api.whatsapp.com/send?phone=6281229567833&text=Halo+Admin%2C+Can+I+get+more+information!" class="button__flex home__button banner__button-2" target="_blank">
-						<i class='bx bxl-whatsapp'></i>
-						<span class="button__text">Order Sekarang</span>
-					</a>
+				<a href="https://api.whatsapp.com/send?phone=6281229567833&text=Halo+Admin%2C+Can+I+get+more+information!" class="button__whatsapp-scale" target="_blank">
+					<i class='bx bxl-whatsapp button__whatsapp-icon'></i>
+					<span class="button__text">Order Sekarang</span>
+				</a>
 			</div>
-
-			<!-- <div class="custom-shape-divider-bottom-1673765396">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-				</svg>
-			</div> -->
 		</section>
-		<!-- ===== end banner ===== -->
+		<!-- ===== end banner 2 ===== -->
 
-
+		<!-- ===== PORTFOLIO ===== -->
 		<section class="portfolio section container" id="portfolio">
 			<h2 class="section__title">Portfolio</h2>
 
@@ -383,128 +390,114 @@
 				<div class="portfolio__video">
 					<h2 class="portfolio__title">Video</h2>
 
-					<div class="portfolio__videos-box grid">
-						<div class="portfolio__video-box">
-							<img src="assets/img/home-slide-1.jpg" alt="portfolio video" class="portfolio__video-poster">
-
-							<div class="video__play" id="video-play">
-								<i class='bx bx-play-circle video__play-icon'></i>
-							</div>
+					<div class="portfolio__videos-container">
+						<div class="video__big-box">
+							<video src="assets/videos/video-sample-1.mp4" class="video__slider" autoplay loop controls></video>
 						</div>
 
-						<div class="portfolio__video-box">
-							<img src="assets/img/home-slide-2.jpg" alt="portfolio video" class="portfolio__video-poster">
+						<ul class="videos__small-list grid">
+							<li onclick="videoSlider('assets/videos/video-sample-1.mp4')" class="videos__small-item">
+								<video src="assets/videos/video-sample-1.mp4"></video>
+							</li>
 
-							<div class="video__play" id="video-play">
-								<i class='bx bx-play-circle video__play-icon'></i>
-							</div>
-						</div>
+							<li onclick="videoSlider('assets/videos/video-sample-2.mp4')" class="videos__small-item">
+								<video src="assets/videos/video-sample-2.mp4"></video>
+							</li>
 
-						<div class="portfolio__video-box">
-							<img src="assets/img/home-slide-3.jpg" alt="portfolio video" class="portfolio__video-poster">
+							<li onclick="videoSlider('assets/videos/video-sample-3.mp4')" class="videos__small-item">
+								<video src="assets/videos/video-sample-3.mp4"></video>
+							</li>
 
-							<div class="video__play" id="video-play">
-								<i class='bx bx-play-circle video__play-icon'></i>
-							</div>
-						</div>
+							<li onclick="videoSlider('assets/videos/video-sample-4.mp4')" class="videos__small-item">
+								<video src="assets/videos/video-sample-4.mp4"></video>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<!-- ===== BANNER 2 ===== -->
-		<section class="banner-3">
-			<!-- <div class="custom-shape-divider-top-1673765287">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-				</svg>
-			</div> -->
-
-			<div class="banner__container-2 container">
-				<h2 class="banner__subtitle">Bingung Cari Persewaan Sound System?</h2>
-				<h1 class="banner__title-3">Percayakan Saja Pada Kami</h1>
-				<h3 class="banner__description-3">Karena Kami Adalah Ahlinya Sound System</h3>
-
-				<a href="https://api.whatsapp.com/send?phone=6281229567833&text=Halo+Admin%2C+Can+I+get+more+information!" class="button__flex home__button" target="_blank">
-						<i class='bx bxl-whatsapp'></i>
-						<span class="button__text">Klik Untuk Chat</span>
-					</a>
-			</div>
-
-			<!-- <div class="custom-shape-divider-bottom-1673765396">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-				</svg>
-			</div> -->
-		</section>
-		<!-- ===== end banner ===== -->
+		<!-- ===== end portfolio ===== -->
 
 		<!-- ===== CONTACT ===== -->
 		<section class="contact section container" id="contact">
 			<h2 class="section__title">Contact Us</h2>
 
 			<div class="contact__container grid">
-				<div class="contact__content">
-					<h3 class="contact__title">ALAMAT</h3>
-					<span class="contact__information">
-						JL. DR. SOETOMO NO.17A, RT.001/RW.009, <br>KARANG TIM., KEC. KARANG TENGAH, <br>KOTA TANGERANG, BANTEN 15157
-					</span>
+				<div class="contact__content contact__address">
+					<div class="google__map-box">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.0803690386!2d106.73203834096316!3d-6.283931254245408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1672747096735!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 
-					<a href="#" class="button__flex home__button" target="_blank">
-						<i class='bx bxs-map'></i>
-						<span class="button__text">Lihat Lokasi</span>
+					<a href="#" class="contact__map-button" target="_blank">
+						<i class='bx bxs-map button__contact-icon'></i>
+						<span>Lihat Lokasi</span>
 					</a>
 				</div>
 
-				<div class="contact__content">
-					<h3 class="contact__title">CONTACT</h3>
-					<ul class="contact__list grid">
-						<li class="contact__item">
-							<i class='bx bxl-whatsapp'></i>
-							<span>+62 812 6470 4748 (Jepri)</span>
-						</li>
+				<div class="contact__content contact__informations">
+					<div class="contact__card">
+						<div class="contact__card-box">
+							<div class="contect__card-info">
+								<i class='bx bxl-whatsapp'></i>
 
-						<li class="contact__item">
-							<i class='bx bxl-whatsapp'></i>
-							<span>+62 812 2956 7833 (Dippu)</span>
-						</li>
+								<div>
+									<h3 class="contact__card-title">Chat Jepri</h3>
+									<p class="contact__card-description">081264704748</p>
+								</div>
+							</div>
 
-						<li class="contact__item">
-							<i class='bx bx-envelope'></i>
-							<span>Yedija96@gmail.com</span>
-						</li>
-					</ul>
+							<button class="contact__card-button">Chat Now</button>
+						</div>
+
+						<div class="contact__card-box">
+							<div class="contect__card-info">
+								<i class='bx bxl-whatsapp'></i>
+
+								<div>
+									<h3 class="contact__card-title">Chat Dippu</h3>
+									<p class="contact__card-description">081229567833</p>
+								</div>
+							</div>
+
+							<button class="contact__card-button">Chat Now</button>
+						</div>
+
+						<div class="contact__card-box">
+							<div class="contect__card-info">
+								<i class='bx bxl-instagram'></i>
+								<div>
+									<h3 class="contact__card-title">Instagram</h3>
+									<p class="contact__card-description">@yedija</p>
+								</div>
+							</div>
+
+							<button class="button contact__card-button">DM Now</button>
+						</div>
+
+						<div class="contact__card-box">
+							<div class="contect__card-info">
+								<i class='bx bxs-envelope'></i>
+								<div>
+									<h3 class="contact__card-title">Message</h3>
+									<p class="contact__card-description">Yedija96@gmail.com</p>
+								</div>
+							</div>
+
+							<button class="contact__card-button">Message Now</button>
+						</div>
+					</div>
 				</div>
-
-				<div class="contact__content">
-					<h3 class="contact__title">SOCIAL MEDIA</h3>
-					<ul class="contact__social-media grid">
-						<a href="#" class="social__media-link">
-							<i class='bx bxl-instagram'></i>
-						</a>
-
-						<a href="#" class="social__media-link">
-							<i class='bx bxl-facebook'></i>
-						</a>
-
-						<a href="#" class="social__media-link">
-							<i class='bx bxl-tiktok' ></i>
-						</a>
-						
-					</ul>
-				</div>
-				<!-- <div class="contact__content google__map-box">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.0803690386!2d106.73203834096316!3d-6.283931254245408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1672747096735!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google__map"></iframe>
-				</div> -->
 			</div>
 		</section>
+		<!-- ===== end contact ===== -->
 	</main>
 	<!-- ===== end main ===== -->
 
 	<!-- ===== FOOTER ==== -->
 	<footer class="footer container section">
-		<span>Copyright &#169; 2023 By  Yedija Production</span>
+		<span class="footer__copy">Copyright &#169; 2023 By  Yedija Production</span>
 	</footer>
+	<!-- ===== end footer ===== -->
 
 	<!-- ===== SCROLL UP ===== -->
 	<a href="#" class="scrollup" id="scroll-up">
