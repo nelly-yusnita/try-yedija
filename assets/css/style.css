@@ -16,19 +16,6 @@
    --first-color-lighten: hsl(228, 100%, 97%);
    --second-color: hsl(25, 83%, 53%);
    --border-color: hsl(228, 99%, 98%);
-   /*
-   --first-color: hsl(228, 66%, 53%);
-   --first-color-alt: hsl(228, 66%, 47%);
-   --first-color-light: hsl(228, 62%, 59%);
-   --first-color-lighten: hsl(228, 100%, 97%);
-   --second-color: hsl(25, 83%, 53%);
-   --title-color: hsl(228, 57%, 28%);
-   --text-color: hsl(228, 15%, 50%);
-   --text-color-light: hsl(228, 12%, 75%);
-   --border-color: hsl(228, 99%, 98%);
-   --body-color: #fff;
-   --container-color: #fff;
-   */
 
    /* ===== Font and typography ===== */
    /*.5rem = 8px | 1rem = 16px ...*/
@@ -277,7 +264,7 @@ button{
 /* ===== HOME ===== */
 .home{
 	position: relative;
-	padding: 8rem 0 6rem;
+	padding: 10rem 0 6rem;
    background: -webkit-linear-gradient(280deg,
                hsl(0, 0%, 22%) 0%,
                hsl(0, 0%, 6%) 30%);
@@ -728,11 +715,14 @@ button{
 	height: 300px;
 	border: 2px solid var(--text-color-light);
 	padding: 0.75rem;
-	margin-bottom: 2rem;
+	margin-bottom: .75rem;
 }
 .google__map-box iframe{
 	width: 100%;
 	height: 100%;
+}
+.contact__address-info{
+	margin-bottom: 2rem;
 }
 .contact__card{
 	display: -ms-grid;
@@ -856,10 +846,36 @@ button{
 /* ===== end portfolio ===== */
 
 /* ===== FOOTER ===== */
+.footer{
+	position: relative;
+	background-color: var(--first-color);
+	margin-top: 4rem;
+	padding-bottom: 3rem;
+}
+.custom-shape-divider-top-1674313812{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+.custom-shape-divider-top-1674313812 svg{
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 80px;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+.custom-shape-divider-top-1674313812 .shape-fill{
+	fill: var(--body-color);
+}
 .footer__copy{
 	display: block;
 	font-size: var(--smaller-font-size);
 	text-align: center;
+	color: var(--text-color-light);
 }
 /* ===== end footer ===== */
 
@@ -1104,6 +1120,12 @@ button{
 		height: 250px;
 	}
 	/* ===== end portfolio ===== */
+
+	/* ===== FOOTER ===== */
+	.custom-shape-divider-top-1674313812 svg{
+		height: 100px;
+	}
+	/* ===== end footer ===== */
 }
 
 @media screen and (min-width: 992px){
@@ -1141,6 +1163,12 @@ button{
    	    grid-template-columns: repeat(2, 1fr);
    }
    /* ===== end contact ===== */
+
+   /* ===== FOOTER ===== */
+	.custom-shape-divider-top-1674313812 svg{
+		height: 150px;
+	}
+	/* ===== end footer ===== */
 }
 
 /* For large devices */
